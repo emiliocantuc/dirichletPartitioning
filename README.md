@@ -3,8 +3,9 @@ A simple Python's Numpy implementation of Dirichlet Partitioning.
 
 In trying to replicate Section 3 of the *Measuring the Effects of Non-Identical Data
 Distribution for Federated Visual Classification* paper I implemented
-a function that partitions an array y of class labels using the Dirichlet
-distribution (as I couldn't find the author's code). Thought it could be useful to others.
+a function that partitions an array of class labels using the [Dirichlet
+distribution](https://en.wikipedia.org/wiki/Dirichlet_distribution) given a concentration
+parameter (as I couldn't find the author's code). Thought it could be useful to others.
 
 ## Usage
 ```
@@ -25,7 +26,6 @@ partition_values={i:y[indices] for i,indices in partition_indices.items()}
 
 ## Examples
 
-I include some examples in the `examples.ipynb` notebook.
 ```
 >>> # A class balanced y
 >>> y=np.random.choice([0,1],size=10000,p=[0.5,0.5])
@@ -90,6 +90,7 @@ Client: 3 Counts: [321] (total: 321) %: [1.00]
 Client: 4 Counts: [326] (total: 326) %: [1.00]
 Total samples: 1976
 ```
+Code used to produce examples is in the  `examples.ipynb` notebook.
 
 ## References
 - Hsu, Tzu-Ming Harry, et al. Measuring the Effects of Non-Identical Data Distribution for Federated Visual Classification. arXiv, September 13, 2019. arXiv.org, [http://arxiv.org/abs/1909.06335](http://arxiv.org/abs/1909.06335).
