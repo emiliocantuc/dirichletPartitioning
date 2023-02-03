@@ -41,10 +41,10 @@ for alpha in [1e+9,100,1,0.001]:
     
     visualize_partition(partition,classes,title=r'$ \alpha = {'+str(alpha)+'} $')
 ```
-<img src="readme_assets/alpha=big.png" width=250>
-<img src="readme_assets/alpha=100.png" width=250>
-<img src="readme_assets/alpha=1.png" width=250>
-<img src="readme_assets/alpha=0.001.png" width=250>
+<img src="readme_assets/alpha=big.png" width=350>
+<img src="readme_assets/alpha=100.png" width=350>
+<img src="readme_assets/alpha=1.png" width=350>
+<img src="readme_assets/alpha=0.001.png" width=350>
 
 
 
