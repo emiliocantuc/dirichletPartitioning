@@ -16,9 +16,8 @@ def samples_per_class_dirichlet(n_classes,c_clients,alpha,n=None,debug=False):
 
     Parameters
     ----------
-    y : numpy array
-        The numpy array of labels to be partitioned, assumed to be of integers 0 to
-        # of classes -1.
+    n_classes : int
+        The number of classes/categories.
 
     c_clients : int
         The number of clients or number of segments to partition y among.
